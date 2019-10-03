@@ -1,0 +1,14 @@
+ <body>
+ <mat-selection-list #items>
+    <mat-list-option *ngFor="let items of todolist1">
+      {{items}}
+    </mat-list-option>
+  </mat-selection-list>
+
+ 
+
+
+   <p>
+    Options selected: {{items.selectedOptions.selected.length}}
+  </p>
+  </body>
