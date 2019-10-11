@@ -1,14 +1,12 @@
  <body>
  <mat-selection-list #items>
-    <mat-list-option *ngFor="let items of todolist1">
-      {{items}}
+    <mat-list-option class="option2" *ngFor="let items1 of todolist1">
+      {{items1}}
     </mat-list-option>
   </mat-selection-list>
-
  
-
-
-   <p>
+ <p class="option">
     Options selected: {{items.selectedOptions.selected.length}}
   </p>
-  </body>
+</body>
+  
