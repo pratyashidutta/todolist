@@ -1,3 +1,23 @@
 .option{
     text-align: center;
 }
+
+    
+.list{
+    background: rgba(145, 223, 145, 0.568);
+    margin-left:600px;
+    width: 500px;
+    border-radius: 10px;
+}
+.donelist{
+    background: rgba(44, 119, 44, 0.568);
+    margin-left:600px;
+    width: 500px;
+    border-radius: 10px;
+}
+input[type=checkbox]:checked + label.strike{
+    text-decoration: line-through;
+  }
+  .fill{
+    flex: 1 1 auto;
+  }

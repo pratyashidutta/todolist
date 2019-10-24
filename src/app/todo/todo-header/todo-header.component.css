@@ -1,5 +1,9 @@
- .header{
+ /* .header{
     background-color: pink;
     text-align: center;
     color: white;
-} 
+}  */
+mat-toolbar{
+    background: pink;
+    text-align: center;
+}

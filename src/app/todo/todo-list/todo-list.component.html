@@ -1,12 +1,29 @@
  <body>
- <mat-selection-list #items>
-    <mat-list-option class="option2" *ngFor="let items1 of todolist1">
-      {{items1}}
-    </mat-list-option>
-  </mat-selection-list>
+   <br> <br>
+   <div class="list">
+ <mat-list #items>
+    <mat-list-item class="option2" *ngFor="let items1 of todolist1; let i=index">
+      <mat-checkbox unchecked="true" (change)="checked(i)" > <label class="strike">{{items1}}</label> </mat-checkbox><span class="fill"></span>
+      <button mat-icon-button (click)="delete(i)"><mat-icon>delete</mat-icon></button>
+    </mat-list-item>
+  </mat-list>
  
- <p class="option">
-    Tasks done: {{items.selectedOptions.selected.length}}
-  </p>
+ <!-- <p class="option">
+    Tasks done: {{doneitem}}
+  </p> -->
+
+  </div>   <br> <br>
+   <div class="donelist">
+ <mat-list #doneitems>
+    <mat-list-item class="option3" *ngFor="let items1 of todolist2; let i=index">
+      <mat-checkbox checked="true" (change)="checked2(i)" > <label class="strike"><s>{{items1}}</s></label> </mat-checkbox> <span class="fill"></span>
+      <button mat-icon-button (click)="delete2(i)"><mat-icon>delete</mat-icon></button>
+    </mat-list-item>
+  </mat-list>
+ 
+ <!-- <p class="option">
+    Tasks done: {{doneitem}}
+  </p> -->
+  </div>
 </body>
   
